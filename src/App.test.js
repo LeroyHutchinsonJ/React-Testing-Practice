@@ -3,13 +3,17 @@ import {add,minus, divide, multiply, sumTotal} from './App';
 
 
 
-console.log(add(1,2));
 
-//This is a unit test, it checks one piece of code
+
+//These are unit tests, they check one piece of code
+//The name of this test is Add
 test('Add', () => {
+    // created a value to hold the function that it is tessting
     const value = add(1, 2);
+    //Expect tells the user what value they should expect a variable to be
     expect(value).toBe(3);
 })
+
 test('Minus', () => {
   const value = minus( 2,4);
   expect(value).toBe(-2);
@@ -24,7 +28,7 @@ test('Multiply', () => {
 })
 
 //This is an integration test, it is meant to test multiple functions that may rely on each other
-test('total', () =>{
+/*test('total', () =>{
   const value = sumTotal(3,2);
   expect(value).toBe(`$${5}`)
-})
+} */
